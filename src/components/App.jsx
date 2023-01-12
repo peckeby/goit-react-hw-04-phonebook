@@ -43,25 +43,14 @@ export const App = () => {
   };
 
   const addNewContact = () => {
-    if (contacts.length > 0) {
-      setContacts(prevState => [
-        ...prevState,
-        {
-          name: nameUser,
-          id: nanoid(),
-          tel: number,
-        },
-      ]);
-    } else {
-      setContacts(prevState => [
-        ...prevState,
-        {
-          name: nameUser,
-          id: nanoid(),
-          tel: number,
-        },
-      ]);
-    }
+    setContacts(prevState => [
+      ...prevState,
+      {
+        name: nameUser,
+        id: nanoid(),
+        tel: number,
+      },
+    ]);
   };
 
   const fiterChange = filter => {
