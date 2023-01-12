@@ -53,13 +53,13 @@ export const App = () => {
         },
       ]);
     } else {
-      setContacts(prevState =>
-        prevState.push({
+      setContacts([
+        {
           name: nameUser,
           id: nanoid(),
           tel: number,
-        })
-      );
+        },
+      ]);
     }
   };
 
